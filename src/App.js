@@ -7,13 +7,13 @@ function App() {
     console.log(count);
   }, [count, setCount]);
 
-  const increment = useCallback(() => {
+  const increment = () => {
     setCount(count + 1);
-  }, [count]);
+  };
 
-  const decrement = useCallback(() => {
+  const decrement = () => {
     setCount(count - 1);
-  }, [count]);
+  };
 
   return (
     <div>
